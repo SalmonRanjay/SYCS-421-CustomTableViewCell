@@ -38,7 +38,7 @@ struct randomMeAPIService {
                         
                         if let pic = user["picture"] {
                         
-                            let url = NSURL(string: pic!["medium"] as! String)
+                            let url = NSURL(string: pic!["large"] as! String)
                             let data = NSData(contentsOfURL: url!)
                             userPic = data!;
                         }
@@ -48,7 +48,7 @@ struct randomMeAPIService {
                     users.append(newUser);
                 }
             }
-            print(users);
+            
             completion(result: users);
         }
         
