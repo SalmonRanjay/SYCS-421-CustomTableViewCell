@@ -11,6 +11,12 @@ import UIKit
 struct randomMeAPIService {
     
     
+    /**
+        RandomMeApi Service function that formats the JSON response received from NetWorkOperations Class
+     
+        - Parameter completion(results [User])->Void : Closuer that takes an Array of Type [User]
+        - Returns: Void
+    */
     
     static  func retrieveAPIData( completion: (result:[User])-> Void ){
         

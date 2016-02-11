@@ -11,7 +11,13 @@ import UIKit
 class NetworkOperations: NSObject {
     
     
-    
+    /**
+        Makes a network request using NSURLSession
+        Networks request is fullfiled with NSURLSession.dataTaskWithURL();
+        
+        - Parameter ([String:AnyObject]?) -> Void : A closure function that takes an Optional dictionary of type String:AnyObject
+        - Returns: Void
+    */
     class func makeGetRequest(completion: (result: [String:AnyObject]?)-> Void){
         
         let session = NSURLSession.sharedSession();
